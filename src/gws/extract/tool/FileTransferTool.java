@@ -12,7 +12,6 @@ import gws.extract.dest_dir_display.DestDirDisplay;
 import gws.extract.file_typ_selector.FileTypeSelector;
 import gws.extract.source_file_display.SourceDirDisplay;
 import gws.extract.steps_display.StepsDisplay;
-import java.awt.Color;
 import java.awt.Component;
 import javax.swing.BorderFactory;
 
@@ -56,8 +55,8 @@ public class FileTransferTool extends javax.swing.JFrame implements ButtonTraver
         MainCon.setBackground(MyColors.LIGHT_BLUE);
         MainCon.setBorder(BorderFactory.createLineBorder(MyColors.TRAVERSE_DARK, 2));
         StepsPanel.setBackground(MyColors.LIGHT_BLUE);
-        MiddleCon.setBackground(MyColors.LIGHT_BLUE);
-        //SidePanel.setBackground(MyColors.LIGHT_BLUE);
+        StepsPanel.setBorder(BorderFactory.createLineBorder(MyColors.DARK_COLOR, 1));
+        MiddleCon.setBackground(MyColors.COLOR_BG);
         TopPanel.setBackground(MyColors.LIGHT_BLUE);
         MiddlePanel.setBackground(MyColors.LIGHT_BLUE);
     }
@@ -169,9 +168,7 @@ public class FileTransferTool extends javax.swing.JFrame implements ButtonTraver
         StepsPanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(2147483647, 600));
         setMinimumSize(new java.awt.Dimension(960, 600));
-        setPreferredSize(new java.awt.Dimension(960, 700));
         setResizable(false);
         getContentPane().setLayout(new java.awt.GridLayout(1, 0));
 
@@ -186,7 +183,7 @@ public class FileTransferTool extends javax.swing.JFrame implements ButtonTraver
 
         jLabel1.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("File Transfer Tool v2.00 by MP");
+        jLabel1.setText("File Transfer Tool");
         TitlePanel.add(jLabel1);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -221,7 +218,7 @@ public class FileTransferTool extends javax.swing.JFrame implements ButtonTraver
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.insets = new java.awt.Insets(0, 100, 0, 100);
         MiddleCon.add(MiddlePanel, gridBagConstraints);

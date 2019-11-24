@@ -2,7 +2,9 @@
  */
 package gws.extract.steps_display;
 
+import gws.extract.beans.MyColors;
 import java.util.ArrayList;
+import javax.swing.BorderFactory;
 
 /**
  *

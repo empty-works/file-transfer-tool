@@ -4,6 +4,7 @@ package gws.extract.steps_display;
 
 import gws.extract.beans.MyColors;
 import java.awt.Color;
+import javax.swing.BorderFactory;
 
 /**
  *
@@ -31,6 +32,7 @@ public class StepBox extends javax.swing.JPanel
     {
         StepLabel.setBackground(MyColors.TRAVERSE_DARK);
         StepLabel.setForeground(Color.WHITE);
+        StepLabel.setBorder(BorderFactory.createLineBorder(MyColors.TRAVERSE_DARK, 1));
     }
     
     /***************************************************************************

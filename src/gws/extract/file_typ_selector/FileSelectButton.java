@@ -135,7 +135,7 @@ public class FileSelectButton extends javax.swing.JPanel
         setLayout(new java.awt.GridBagLayout());
 
         CheckmarkLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CheckmarkLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gws/extract/image_assets/check94x75.png"))); // NOI18N
+        CheckmarkLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gws/extract/image_assets/checkmark94x94.png"))); // NOI18N
         CheckmarkLabel.setToolTipText(null);
         CheckmarkLabel.setMaximumSize(new java.awt.Dimension(200, 100));
         CheckmarkLabel.setMinimumSize(new java.awt.Dimension(200, 100));

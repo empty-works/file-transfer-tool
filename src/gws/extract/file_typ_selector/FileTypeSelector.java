@@ -22,18 +22,9 @@ public class FileTypeSelector extends javax.swing.JPanel
     {
         initComponents();
         this.transferProps = transferProps;
-        setColors();
         addButtons();
         setTraverseButtons();
         checkForPreviousAnswer();
-    }
-    
-    /***************************************************************************
-     * 
-     ***************************************************************************/
-    private void setColors()
-    {
-        TitleLabel.setForeground(MyColors.DARK_COLOR);
     }
     
     /***************************************************************************
@@ -120,8 +111,6 @@ public class FileTypeSelector extends javax.swing.JPanel
         java.awt.GridBagConstraints gridBagConstraints;
 
         MainCon = new javax.swing.JPanel();
-        TitlePanel = new javax.swing.JPanel();
-        TitleLabel = new javax.swing.JLabel();
         ButtonsCon = new javax.swing.JPanel();
 
         setToolTipText(null);
@@ -136,24 +125,6 @@ public class FileTypeSelector extends javax.swing.JPanel
         MainCon.setPreferredSize(new java.awt.Dimension(0, 425));
         MainCon.setLayout(new java.awt.GridBagLayout());
 
-        TitlePanel.setToolTipText(null);
-        TitlePanel.setMinimumSize(new java.awt.Dimension(0, 100));
-        TitlePanel.setOpaque(false);
-        TitlePanel.setPreferredSize(new java.awt.Dimension(0, 100));
-        TitlePanel.setLayout(new java.awt.GridLayout(1, 0));
-
-        TitleLabel.setFont(new java.awt.Font("Arial Black", 1, 36)); // NOI18N
-        TitleLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        TitleLabel.setToolTipText(null);
-        TitlePanel.add(TitleLabel);
-
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.weightx = 0.1;
-        MainCon.add(TitlePanel, gridBagConstraints);
-
         ButtonsCon.setToolTipText(null);
         ButtonsCon.setOpaque(false);
         ButtonsCon.setPreferredSize(new java.awt.Dimension(0, 150));
@@ -164,7 +135,7 @@ public class FileTypeSelector extends javax.swing.JPanel
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.2;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 25, 0);
+        gridBagConstraints.insets = new java.awt.Insets(25, 0, 25, 0);
         MainCon.add(ButtonsCon, gridBagConstraints);
 
         add(MainCon);
@@ -174,7 +145,5 @@ public class FileTypeSelector extends javax.swing.JPanel
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel ButtonsCon;
     private javax.swing.JPanel MainCon;
-    private javax.swing.JLabel TitleLabel;
-    private javax.swing.JPanel TitlePanel;
     // End of variables declaration//GEN-END:variables
 }

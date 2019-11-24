@@ -172,7 +172,7 @@ public abstract class SuperDisplay extends javax.swing.JPanel implements ButtonO
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.1;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 10, 0);
+        gridBagConstraints.weighty = 0.1;
         add(StatusCon, gridBagConstraints);
 
         StatusConPlaceholder.setBackground(new java.awt.Color(0, 0, 0));
@@ -186,7 +186,7 @@ public abstract class SuperDisplay extends javax.swing.JPanel implements ButtonO
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.1;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 10, 0);
+        gridBagConstraints.weighty = 0.1;
         add(StatusConPlaceholder, gridBagConstraints);
 
         MiddlePanel.setToolTipText(null);
@@ -203,8 +203,9 @@ public abstract class SuperDisplay extends javax.swing.JPanel implements ButtonO
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.1;
+        gridBagConstraints.weighty = 0.1;
         MiddlePanel.add(ButtonCon, gridBagConstraints);
 
         ScanProgressBar.setBackground(new java.awt.Color(204, 51, 255));
@@ -225,6 +226,7 @@ public abstract class SuperDisplay extends javax.swing.JPanel implements ButtonO
         gridBagConstraints.gridy = 1;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.1;
+        gridBagConstraints.weighty = 0.1;
         add(MiddlePanel, gridBagConstraints);
 
         BottomPanel.setToolTipText(null);
@@ -240,7 +242,7 @@ public abstract class SuperDisplay extends javax.swing.JPanel implements ButtonO
         BottomPanel.add(TitleLabel, new java.awt.GridBagConstraints());
 
         CheckmarkLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CheckmarkLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gws/extract/image_assets/check94x75.png"))); // NOI18N
+        CheckmarkLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gws/extract/image_assets/checkmark94x94.png"))); // NOI18N
         CheckmarkLabel.setToolTipText(null);
         CheckmarkLabel.setMaximumSize(new java.awt.Dimension(150, 0));
         CheckmarkLabel.setMinimumSize(new java.awt.Dimension(150, 0));
@@ -255,6 +257,7 @@ public abstract class SuperDisplay extends javax.swing.JPanel implements ButtonO
         gridBagConstraints.gridy = 2;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.1;
+        gridBagConstraints.weighty = 0.1;
         add(BottomPanel, gridBagConstraints);
     }// </editor-fold>//GEN-END:initComponents
 
